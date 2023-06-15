@@ -7,7 +7,7 @@
 <hr>
 <ul>
 <% @restaurant.reviews.each do |r| %>
-<%= r.rating %>/5
+<%= r.rating %>/5 - 
 <%= r.content %>
 <br />
 <% end %>
@@ -23,7 +23,7 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, class: 'btn btn-primary' %>
   </div>
 <% end %>
 <hr>
